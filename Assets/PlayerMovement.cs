@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
         navmesh_agent_ = GetComponent<NavMeshAgent>();
         navmesh_agent_.acceleration = 1000f;
         navmesh_agent_.speed = 4;
+        navmesh_agent_.angularSpeed = 100000f;
         target_pos_ = transform.position;
     }
 

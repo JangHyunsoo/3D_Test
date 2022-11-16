@@ -24,9 +24,6 @@ public class PointOfView : MonoBehaviour
 
         start_angle = angle - getRadian(ray_angle / 2);
 
-        Debug.Log(getAngle(angle));
-        Debug.Log(getAngle(start_angle));
-
         angle_step = ray_angle / piece;
 
         for (int i = 0; i < piece; i++)
