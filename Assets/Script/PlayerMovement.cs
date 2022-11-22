@@ -19,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
         target_pos_ = transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
@@ -31,7 +30,6 @@ public class PlayerMovement : MonoBehaviour
                 target_pos_ = raycastHit.point;
             }
         }
-
         navmesh_agent_.SetDestination(target_pos_);
     }
 }
